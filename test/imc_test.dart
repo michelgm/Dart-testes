@@ -4,7 +4,12 @@ import 'package:test/scaffolding.dart';
 
 void main() {
   test('Deve efetuar o calculo do IMC', () {
-    final result = calcIMC(1.78, 64);
+    // arrange
+    final peso = 64.0;
+    final altura = 1.78;
+    // act
+    final result = calcIMC(altura, peso);
+    // assert
     expect(result, equals(20.199469763918696));
   });
 
